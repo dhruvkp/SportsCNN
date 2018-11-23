@@ -1,0 +1,28 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{hyperref}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\usepackage{bm}
+\usepackage{enumitem}
+\usepackage[margin=1in]{geometry}
+\usepackage{graphicx}
+\usepackage{esint}
+\title{CNN Project Proposal}
+\begin{document}
+\maketitle
+\section{Project Definition}
+Given set of training examples of sports images, train a neural network to label unseen image with correct sport's name.
+\section{Project Members}
+Dhruvkumar Patel (drp150030)\\Vatsalkumar Patel (vrp140230)\\Shikhar Pandya (sdp170030)
+\section{Details}
+Here we propose a problem for Convolutional Neural Network course project. Given set of static images of person/persons playing sports or doing athletic activity, model will learn to classify unseen image into correct sport category. This problem involves classifying events in static images. Event here means a human activity in a specific environment. We plan to focus our attempts on sports and athletic events in this project. We plan to use number of sports games such as snow boarding, rock climbing or badminton to demonstrate event classification. This task involves solving two high level problems, i.e. objects indentification in given static image, and determining sport event category given identified objects in that image. We have thought to simplify classification using Multiscale Neural Networks, where we narrow down possible sport categories for given image using initial several layers in body of the network. We are planning to use Event dataset provided by Stanford vision group available here- \url{http://vision.stanford.edu/lijiali/event_dataset/}. We are also planning to add more labeled training data of more popular sports such as Baseball, Basket ball, Soccer, Football etc by web scraping.
+\begin{thebibliography}{9}
+    \bibitem{first}
+    L. Fei-Fei and P. Perona. A Bayesian hierarchy model for learning natural scene categories. CVPR, 2005.
+    \bibitem{sports}
+    Li, Li-Jia and Fei-Fei, Li. (2007). What, where and who? Classifying events by scene and object recognition. 1-8. 10.1109/ICCV.2007.4408872. 
+    \bibitem{scene}
+    B. Zhou, A. Lapedriza, J. Xiao, A. Torralba, and A. Oliva. “Learning Deep Features for Scene Recognition using Places Database.” Advances in Neural Information Processing Systems 27 (NIPS), 2014. 
+\end{thebibliography}
+\end{document}
