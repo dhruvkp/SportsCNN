@@ -1,7 +1,7 @@
 import os
 import tensorflow as tf
 
-def read_images_from_dirs(dataset_path):
+def load_uiuc_data(dataset_path):
     images=[]
     labels=[]
     for root, dirs, files in os.walk(dataset_path):  
@@ -14,4 +14,5 @@ def read_images_from_dirs(dataset_path):
                     labels.append(dirname)
     images=tf.convert_to_tensor(images)
     labels=tf.convert_to_tensor(labels)
+
     return [images,labels]
